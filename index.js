@@ -1,4 +1,4 @@
-const sendBtn = document.querySelector("form");
+const formSubmit = document.querySelector("form");
 const inputText = document.querySelector(".search-input");
 const showText = document.querySelector(".show-text");
 let userText = "";
@@ -7,7 +7,7 @@ inputText.addEventListener("change", (e) => {
   userText = e.target.value;
 });
 
-sendBtn.addEventListener("submit", (e) => {
+formSubmit.addEventListener("submit", (e) => {
   e.preventDefault();
   if (userText === "") {
     showText.innerHTML = "";
